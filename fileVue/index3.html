@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./vue.js"></script>
+    <title>Adicionando nosso 1º Methods a instância Vue</title>
+</head>
+<body>
+    <div id="app">
+        {{ somar() }}<br>
+        {{ subtrair() }}<br>
+        {{ multiplicar() }}<br>
+        {{ dividir() }}<br>
+        {{ numeroAleatorio() }}<br>
+    </div>
+
+    <script>
+
+        const vm = new Vue({
+            el: '#app',
+            data: {},
+            
+            methods: {
+                somar: function somar() { //convencional
+                    return 4 + 2;
+                },
+
+                subtrair: function() { //anônima - funçao q nao tem nome
+                    return 4 - 2;
+                },
+
+                multiplicar: () => { //arrow function 
+                    return 4 * 2;
+                },
+                dividir() { //forma enxuta de definir os pares de chave/valor
+                    return 4 / 2;
+                },
+                numeroAleatorio: function numeroAleatorio() { //a informaçao atribuida a chave e = informaçao atribuida a seu valor
+                    return Math.random();
+                }                         
+            }
+        })
+        
+    </script>
+    <!--Math.random() é uma função em JavaScript que gera um número 
+    pseudoaleatório entre 0 (inclusivo) e 1 (exclusivo).   -->
+</body>
+</html>
