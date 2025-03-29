@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./vue.js"></script>
+    <title> 1º App em Vue (instancia de Vue e o doubre mustache {{  }})</title>
+</head>
+<body>
+    <div id="app"> <!--app e de aplication-->
+        {{ mensagem }}
+    </div>
+
+    <script>
+        // criar uma variavel chama (vm de  vieModel) q vai receber a instancia
+        const vm = new Vue({ // 
+            el: '#app', // . ponto par selecionar por  class  . / # para selecionar por id
+            data: {
+                mensagem: 'Primeiro template controlado pelo Vue'
+            }
+        })
+    </script>
+</body>
+</html>
