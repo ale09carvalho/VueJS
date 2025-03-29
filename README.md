@@ -1,4 +1,8 @@
 # VueJS
+O Framework JavaScript -  para a construção de interfaces de usuário
+https://br.vuejs.org/v2/guide/installation.html
+<hr>
+
 Iniciando projetos Vue com o JSFiddle e ou Codepen <br>
 🎭 EDITORES ONLINE
 
